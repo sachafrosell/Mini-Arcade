@@ -1,8 +1,9 @@
 body {
   margin: 0;
   padding: 0;
+  background-image: url('https://cdn.spacetelescope.org/archives/images/screen/heic0406a.jpg');
 }
-
+/*
 header {
   background-color: #4caf50;
   margin: 0 auto;
@@ -66,4 +67,4 @@ button.release {
   main {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-}
+} */
