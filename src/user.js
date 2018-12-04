@@ -20,13 +20,14 @@ class User {
 
   renderScored() {
     //should return an array of html for an individual user that the domcontroller can append to another div
-    let stupidThing = {}
-    const scoreCard = document.createElemet('div')
-    this.scores.forEach(scoreObj => {
-      Game.all.find()
+    let scoreBoard = {}
+    this.scores.forEach(score => {
+      let game = Game.all.find(game => game.id === score.game_id)
+      scoreBoard[`${game.title}`] = score.points
     })
-
-
+    console.table(scoreBoard)
+    //hiscores here
+    const scoreCard = document.createElement('div')
   }
 
 
