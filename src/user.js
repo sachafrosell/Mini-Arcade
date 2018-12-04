@@ -20,9 +20,12 @@ class User {
 
   renderScored() {
     //should return an array of html for an individual user that the domcontroller can append to another div
+    let stupidThing = {}
     const scoreCard = document.createElemet('div')
+    this.scores.forEach(scoreObj => {
+      Game.all.find()
+    })
 
-    <p>${this.scores}</p>
 
   }
 
