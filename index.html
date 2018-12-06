@@ -20,7 +20,21 @@
     </div>
 
     <main class="main">
-      <!-- <div class="ui grid"> -->
+      <section class="score-display" style="float: right;">
+        <div class="hi-score">
+          <p>Hi Score</p>
+          <ol>
+          </ol>
+        </div>
+        <div class="leaderboard">
+          <p>Global Leaderboard</p>
+          <ol>
+            <li>Hi</li>
+          </ol>
+        </div>
+
+      </section>
+
         <div class="ui grid display-div" id="game-container">
           <div id="gameArea">
             <canvas id="gameCanvas" width="620" height="400"></canvas>
@@ -30,20 +44,7 @@
             <canvas width="620" height="400"></canvas>
           </div>
         </div>
-      <!-- </div> -->
-      <!-- <div class="ui grid" id="floating-div">
-        <div id="display-div" class="seven wide column">
-          <div class="game-container">
 
-          </div>
-        </div>
-        <div class="one wide column"></div>
-        <div id="display-div" class="seven wide column">
-          <div class="leaderboard-container">
-
-          </div>
-        </div>
-      </div> -->
     </main>
 
     <script defer src="./src/fetch.js"></script>
