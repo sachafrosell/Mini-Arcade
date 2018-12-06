@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Arcade</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="semantic.css">
+  </head>
+  <body class="landing-image">
+    <header>
+      <h1>PONG</h1>
+    </header>
+
+    <div class="leaderboard">
+
+    </div>
+
+    <div class="highscores">
+
+    </div>
+
+    <main class="main">
+      <!-- <div class="ui grid"> -->
+        <div class="ui grid display-div" id="game-container">
+          <div id="gameArea">
+            <canvas id="gameCanvas" width="620" height="400"></canvas>
+          </div>
+          <div class="ui divider"></div>
+          <div id="gameArea">
+            <canvas width="620" height="400"></canvas>
+          </div>
+        </div>
+      <!-- </div> -->
+      <!-- <div class="ui grid" id="floating-div">
+        <div id="display-div" class="seven wide column">
+          <div class="game-container">
+
+          </div>
+        </div>
+        <div class="one wide column"></div>
+        <div id="display-div" class="seven wide column">
+          <div class="leaderboard-container">
+
+          </div>
+        </div>
+      </div> -->
+    </main>
+
+    <script defer src="./src/fetch.js"></script>
+    <script defer src="./src/game.js"></script>
+    <script defer src="./src/user.js"></script>
+    <script defer src="./src/helpers.js"></script>
+    <script defer src="./src/index.js"></script>
+    <script defer src="./games/pong.js"></script>
+    <script defer src="./games/p5/circle.js"></script>
+    <script defer src="./games/p5/matter.js"></script>
+    <script defer src="./games/p5/rect.js"></script>
+    <script defer src="./games/p5/score.js"></script>
+    <script defer src="./games/p5/sketch.js"></script>
+    <script src="./src/p5.js"></script>
+    <script src="./src/p5.collide2d.js"></script>
+    <script src="./src/domcontroller.js"></script>
+
+
+  </body>
+</html>
