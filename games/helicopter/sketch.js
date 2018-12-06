@@ -35,7 +35,8 @@ function setup() {
   imageMode(CENTER);
   playerScoreBoard = new ScoreBoard();
   rectMode(CENTER)
-  createCanvas(400, 400);
+  createCanvas(400, 400).position(400, 150)
+  // cnv
   engine = Engine.create();
   world = engine.world;
   Engine.run(engine);
@@ -45,7 +46,8 @@ function setup() {
 }
 
 function preload() {
-  img = loadImage('helicoptericon.png')
+  // img = loadImage('./games/helicopter/assets/helicoptericon.png')
+  img = loadImage('https://i.imgur.com/cGk2Krh.png')
 }
 
 function keyPressed() {
