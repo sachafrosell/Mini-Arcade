@@ -28,6 +28,6 @@ class ApiCommunicator {
 
 }
 
-let test = new ApiCommunicator
-test.getGames()
-test.getUsers()
+// let test = new ApiCommunicator
+// test.getGames()
+// test.getUsers()
