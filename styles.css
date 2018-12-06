@@ -3,68 +3,47 @@ body {
   padding: 0;
   background-image: url('https://cdn.spacetelescope.org/archives/images/screen/heic0406a.jpg');
 }
-/*
-header {
-  background-color: #4caf50;
-  margin: 0 auto;
-  height: 50px;
+
+.landing-image {
+    background-image: url('assets/heic0406a.jpg') !important;
+    background-size: cover !important;
 }
 
-header h2 {
+#floating-div {
+  height: 500px;
+  margin-top: 100px;
+  margin-left: 50px;
+  /* margin-right: 50px; */
+}
+
+.display-div {
+  height: 800px;
+  background: rgb(256, 256, 256);
+  opacity: 0.3;
   padding: 10px;
-  margin: 0;
+  border-radius: 0.5%;
 }
 
-main {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-gap: 20px;
-  padding-top: 10px;
-  padding-bottom: 30px;
+.main {
+  margin-top: 100px;
+  margin-left: 400px;
+  margin-right: 400px;
+  margin-bottom: 100px;
 }
 
-div.card {
-  background-color: #eeeeee;
-  height: 250px;
-  width: 300px;
-  box-shadow: 10px 10px grey;
-  padding: 10px;
-  border-radius: 10px;
+#gameArea {
+  margin-top: 20px;
+  margin-left: 10px;
+  /* position: absolute; */
+  /* left:     100%;
+  top:      100%; */
 }
 
-p {
-  font-size: 1.5em;
-  color: black;
-  font-family: Helvetica;
-}
+/* #leaderBoard {
 
-li {
-  font-size: 1.05em;
-  list-style: none;
-  padding-right: 20px;
-}
+} */
 
-button {
-  font-size: .65em;
-  color: #fff;
-  background-color: green;
-  border-radius: 10px;
-}
-
-button.release {
-  float: right;
-  background-color: #E1332D;
-}
-
-@media only screen and (min-width: 500px) {
-  main {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media only screen and (min-width: 850px) {
-  main {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
+/* #gameCanvas {
+  width: 500px;
+  height: 500px;
 } */

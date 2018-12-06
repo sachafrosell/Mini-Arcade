@@ -557,10 +557,12 @@ template {
 html,
 body {
   height: 100%;
+  color: rgb(256, 256, 256);
 }
 
 html {
   font-size: 14px;
+  color: rgb(256, 256, 256);
 }
 
 body {
@@ -572,7 +574,8 @@ body {
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 1.4285em;
-  color: rgba(0, 0, 0, 0.87);
+  /* color: rgba(0, 0, 0, 0.87); */
+  color: rgb(256, 256, 256);
   font-smoothing: antialiased;
 }
 
@@ -595,6 +598,8 @@ h5 {
 h1 {
   min-height: 1rem;
   font-size: 2rem;
+  color: rgb(256, 256, 256);
+  text-align: center;
 }
 
 h2 {
