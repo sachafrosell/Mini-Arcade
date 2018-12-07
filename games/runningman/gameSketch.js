@@ -159,6 +159,7 @@ var runningMan = function(p) {
       p.fill(0)
       p.textSize(50);
       p.text(`SCORE: ${p.scoreBoard.score}`, p.person.body.position.x + 100, 200,)
+      console.log(p.scoreBoard.score)
       p.noLoop();
     }
   }

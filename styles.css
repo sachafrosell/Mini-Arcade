@@ -37,12 +37,12 @@ body {
 
 #game-container {
   position: fixed;
-  width: 28%;
-  height: 48%;
+  width: 450px;
+  height: 440px;
 }
 
 #gameArea1 {
-  padding-left: 6%;
+  padding-left: 26px;
 
 }
 
@@ -53,7 +53,7 @@ body {
 .score-display {
   position: fixed;
   float: right;
-  right: 22%;
+  right: 300px;
   padding-left: 20px;
 }
 
