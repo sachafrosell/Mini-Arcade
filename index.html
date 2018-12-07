@@ -8,45 +8,52 @@
   </head>
   <body class="landing-image">
     <header>
-      <h1></h1>
+
+      <div class="arcade-header">
+      </div>
+
     </header>
-
-    <div class="leaderboard">
-
-    </div>
-
-    <div class="highscores">
-
-    </div>
-
     <main class="main">
-      <section class="score-display" style="float: right;">
-        <div class="hi-score">
-          <p>Hi Score</p>
-          <ol>
-          </ol>
-        </div>
-        <div class="leaderboard">
-          <p>Global Leaderboard</p>
-          <ol id="global-list">
-            <li>HI</li>
-            <div class=game>
-              <button id="go">Go</button>
-              <button id="brickbreaker" data-id="on" >Go</button>
-            </div>
-          </ol>
-        </div>
 
-      </section>
+      <section class="score-display"> <!-- Begin Score Board -->
+        <!-- hi score for the current game -->
+        <h4 class="ui orange header">Hi Score</h4>
+        <div class="hi-score">
+          <ol id="scoreboard" class="ui yellow inverted relaxed divided list">
+            <li>Alex: 1555qw2qweqweqwe34</li>
+            <li>Alex: 1555qweqwqw234</li>
+            <li>Alex: 1555qwwqeqweqwewqeqwe234</li>
+            <li>Alex: 1555qwwqewq234</li>
+            <li>Alex: 155adwqessd5qw234</li>
+            <li>Alex: 1555qqweqww234</li>
+            <li>Alex: 1555wqeqwqw234</li>
+          </ol>
+        </div>
+        <!--
+        <div id="global-list" class="leaderboard">
+          <h4 class="ui red header">Global Leaderboard</h4>
+          <ol class="ui inverted relaxed divided list">
+            <li>Alex: 1555qw234</li>
+            <li>Alex: 15adsd55234</li>
+            <li>Alex: 15qweqw55234</li>
+            <li>Alex: 15wqeqwe55234</li>
+            <li>Alex: 1555234wqe</li>
+          </ol>
+        -->
+            <div class="game-button-container">
+              <button id="go" class="game-start-button ui inverted red button">Helicopter</button>
+              <button id="brickbreaker-button" data-id="on" class="ui inverted red button game-start-button">Brick Breaker</button>
+            </div>
+
+        </div>
+      </section> <!-- End ScoreBoard -->
+
       <div class="center-div"></div>
 
         <div class="ui grid display-div" id="game-container">
-          <div id="gameArea1">
-            <!-- <canvas id="gameCanvas" width="400" height="400"></canvas> -->
-          </div>
-          <div class="ui divider"></div>
-          <div id="gameArea2">
-            <!-- <canvas width="620" height="400"></canvas> -->
+
+          <div id="gameArea1" class="ui divider">
+
           </div>
         </div>
 
@@ -54,11 +61,11 @@
 
     </main>
 
-    <script defer src="./src/fetch.js"></script>
-    <script defer src="./src/game.js"></script>
-    <script defer src="./src/user.js"></script>
-    <script defer src="./src/helpers.js"></script>
-    <script defer src="./src/index.js"></script>
+    <script src="./src/fetch.js"></script>
+    <script src="./src/game.js"></script>
+    <script src="./src/user.js"></script>
+    <script src="./src/helpers.js"></script>
+    <script src="./src/index.js"></script>
     <script src="./games/helicopter/matter.js"></script>
     <script src="./src/p5.js"></script>
     <script src="./games/helicopter/addons/p5.dom.js"></script>

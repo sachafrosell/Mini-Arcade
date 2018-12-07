@@ -240,6 +240,9 @@ var s = function(p) {
       }
     }
   } // end of rectangle
+  function ScoreBoard() {
+    this.score = 0;
+  }
 
   function ScoreBoard() {
     this.score = 0;
