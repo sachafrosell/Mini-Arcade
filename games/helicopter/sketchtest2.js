@@ -1,11 +1,10 @@
 
 var s = function(p) {
 
-   p.Engine = Matter.Engine
-   p.World = Matter.World
-   p.Bodies = Matter.Bodies
-   p.Body = Matter.Body
-
+   p.Engine = Matter.Engine;
+   p.World = Matter.World;
+   p.Bodies = Matter.Bodies;
+   p.Body = Matter.Body;
    p.circles = [];
    p.rects = [];
    p.engine;
@@ -16,8 +15,6 @@ var s = function(p) {
    p.forwards = true;
    p.scrollSpeed;
    p.difficulty = 100;
-   // c;
-   // r;
    p.ball;
    p.boxXPos;
    p.boxYPos = 200;
@@ -243,6 +240,10 @@ var s = function(p) {
       }
     }
   } // end of rectangle
+
+  function ScoreBoard() {
+    this.score = 0;
+  }
 
 
 }

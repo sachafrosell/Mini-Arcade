@@ -5,6 +5,15 @@ const button1 = document.getElementById('go')
 const button2 = document.getElementById('brickbreaker')
 const globalLeaderboard = document.getElementById('global-list')
 
+// document.addEventListener('click', () => {
+//   console.log("loaded");
+//   console.log(document.body.innerHTML);
+//   let scriptTag = '<script src="./games/pong.js"></script>'
+//   // document.write(scriptTag)
+//   // document.body.innerHTML += `
+//   // <script src="./games/pong.js"></script>
+//   // `
+// })
 // document.addEventListener('click', e => {
 //   // console.log(e.target.dataset.id);
 //   if (e.target.id == "brickbreaker" && e.target.dataset.id == "on") {
