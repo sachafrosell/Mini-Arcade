@@ -1,7 +1,3 @@
-// Daniel Shiffman
-// https://www.kadenze.com/courses/the-nature-of-code
-// http://natureofcode.com/
-// Session 2: Array of Particles, multiple forces
 
 function Person() {
   let options = {
