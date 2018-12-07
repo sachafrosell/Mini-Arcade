@@ -129,6 +129,8 @@ var helicopter = function(p) {
                 p.text(`Score: ${p.playerScoreBoard.score}`, 200, 200);
                 p.scrollSpeed = 7
                 p.boxMover = 7
+                helicopterScores.push(p.playerScoreBoard.score)
+                setScore(helicopterScores)
                 p.noLoop();
             } else if (p.ball.body.position.y >= p.width - 20 || p.ball.body.position.y <= 20) {
                 p.background(255)
@@ -138,6 +140,8 @@ var helicopter = function(p) {
                 p.text(`Score: ${p.playerScoreBoard.score}`, 200, 200)
                 p.scrollSpeed = 7
                 p.boxMover = 7
+                helicopterScores.push(p.playerScoreBoard.score)
+                setScore(helicopterScores)
                 p.noLoop();
             }
         }
@@ -156,6 +160,8 @@ var helicopter = function(p) {
             p.text(`Score: ${p.playerScoreBoard.score}`, 200, 200)
             p.scrollSpeed = 7
             p.boxMover = 7
+            helicopterScores.push(p.playerScoreBoard.score)
+            setScore(helicopterScores)
             p.noLoop()
           }
         }
