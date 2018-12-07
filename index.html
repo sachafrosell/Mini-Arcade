@@ -8,24 +8,16 @@
   </head>
   <body class="landing-image">
     <header>
-      <h1>Arcade</h1>
+      <div class="arcade-header">
+      </div>
     </header>
-    <div id="brickbreaker">
-    </div>
-
-    <div class="leaderboard">
-
-    </div>
-
-    <div class="highscores">
-
-    </div>
-
     <main class="main">
-      <section class="score-display" style="float: right;">
-        <div class="hi-score ui inverted relaxed divided list">
-          <p>Hi Score</p>
-          <ol class="ui inverted relaxed divided list">
+
+      <section class="score-display"> <!-- Begin Score Board -->
+        <!-- hi score for the current game -->
+        <div class="hi-score">
+          <h4 class="ui orange header">Hi Score</h4>
+          <ol class="ui yellow inverted relaxed divided list">
             <li>Alex: 1555qw2qweqweqwe34</li>
             <li>Alex: 1555qweqwqw234</li>
             <li>Alex: 1555qwwqeqweqwewqeqwe234</li>
@@ -35,8 +27,9 @@
             <li>Alex: 1555wqeqwqw234</li>
           </ol>
         </div>
+        <!--
         <div id="global-list" class="leaderboard">
-          <p>Global Leaderboard</p>
+          <h4 class="ui red header">Global Leaderboard</h4>
           <ol class="ui inverted relaxed divided list">
             <li>Alex: 1555qw234</li>
             <li>Alex: 15adsd55234</li>
@@ -44,22 +37,19 @@
             <li>Alex: 15wqeqwe55234</li>
             <li>Alex: 1555234wqe</li>
           </ol>
-            <div class=game>
-              <button id="go" class="game-start-button ui inverted yellow button">Helicopter</button>
-              <button id="brickbreaker-button" data-id="on" class="ui inverted yellow button game-start-button">Brick Breaker</button>
+        -->
+            <div class="game-button-container">
+              <button id="go" class="game-start-button ui inverted red button">Helicopter</button>
+              <button id="brickbreaker-button" data-id="on" class="ui inverted red button game-start-button">Brick Breaker</button>
             </div>
-        </div>
 
-      </section>
+        </div>
+      </section> <!-- End ScoreBoard -->
+
       <div class="center-div"></div>
 
         <div class="ui grid display-div" id="game-container">
-          <div id="gameArea1">
-            <!-- <canvas id="gameCanvas" width="620" height="400"></canvas> -->
-          </div>
-          <div class="ui divider"></div>
-          <div id="gameArea2">
-            <!-- <canvas width="620" height="400"></canvas> -->
+          <div id="gameArea1" class="ui divider">
           </div>
         </div>
 
