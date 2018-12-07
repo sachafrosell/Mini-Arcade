@@ -11,8 +11,8 @@ var falldown = function(p) {
   p.isPlaying = true;
   //
   p.setup = function() {
-    let cnv = p.createCanvas(400, 400);
-    cnv.parent(gameArea1);
+    p.createCanvas(400, 400);
+    // cnv.parent(gameArea1);
     p.rectMode(p.CORNER)
     gameReset()
   }
@@ -231,4 +231,4 @@ var falldown = function(p) {
 
 }
 
-var falldownP5 = new p5(falldown);
+// var falldownP5 = new p5(falldown, 'gameArea1');

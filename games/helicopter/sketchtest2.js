@@ -1,5 +1,5 @@
 
-var s = function(p) {
+var helicopter = function(p) {
 
    p.Engine = Matter.Engine;
    p.World = Matter.World;
@@ -43,8 +43,8 @@ var s = function(p) {
 
   p.mousePressed = function() {
     if (event.target == button1) {
-      let cnv = p.createCanvas(400, 400);
-      cnv.parent(gameArea1);
+      p.createCanvas(400, 400);
+      // cnv.parent(gameArea1);
       p.textSize(75)
       p.fill(0)
       p.text(`Ready?`, 200, 200)
@@ -251,4 +251,4 @@ var s = function(p) {
 
 }
 // }
-var myp5 = new p5(s);
+// var helicopterP5 = new p5(s, 'gameArea1');
