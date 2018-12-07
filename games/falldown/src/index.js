@@ -53,12 +53,16 @@ var falldown = function(p) {
           p.hit = p.collideRectRect(p.player.location.x, p.player.location.y, p.player.width, p.player.height, shape.x, shape.y, p.shapeSize, p.shapeSize)
           if (p.hit) {
             p.isPlaying = false
-            setTimeout(function() {p.background(123, 123, 123)
+            p.background(123, 123, 123)
               p.streams.splice(0, p.streams.length)
             p.textSize(30)
             p.text(`      SCORE: ${scoreBoard.score} \n Click to Play Again`, 60, 180)
-            p.noLoop()}, 30)
-            p.player.score = scoreBoard.score
+            p.noLoop()
+            for (let i = 0; i < 1; i++) {
+              fallDownScores.push(scoreBoard.score)
+              setScore(fallDownScores)
+            }
+
           }
           else {
             stream.speed = stream.speed + 0.00008
@@ -69,6 +73,8 @@ var falldown = function(p) {
           p.background(123, 123, 123)
           p.textSize(75)
           p.text(`SCORE: ${scoreBoard.score}`, 150, 300)
+          fallDownScores.push(scoreBoard.score)
+          setScore(fallDownScores)
           p.noLoop()
           p.player.score = scoreBoard.score
         }
