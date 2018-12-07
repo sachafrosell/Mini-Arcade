@@ -10,6 +10,8 @@
     <header>
       <h1>Arcade</h1>
     </header>
+    <div id="brickbreaker">
+    </div>
 
     <div class="leaderboard">
 
@@ -21,20 +23,31 @@
 
     <main class="main">
       <section class="score-display" style="float: right;">
-        <div class="hi-score">
+        <div class="hi-score ui inverted relaxed divided list">
           <p>Hi Score</p>
-          <ol>
+          <ol class="ui inverted relaxed divided list">
+            <li>Alex: 1555qw2qweqweqwe34</li>
+            <li>Alex: 1555qweqwqw234</li>
+            <li>Alex: 1555qwwqeqweqwewqeqwe234</li>
+            <li>Alex: 1555qwwqewq234</li>
+            <li>Alex: 155adwqessd5qw234</li>
+            <li>Alex: 1555qqweqww234</li>
+            <li>Alex: 1555wqeqwqw234</li>
           </ol>
         </div>
-        <div class="leaderboard">
+        <div id="global-list" class="leaderboard">
           <p>Global Leaderboard</p>
-          <ol id="global-list">
-            <li>HI</li>
-            <div class=game>
-              <button id="go">Go</button>
-              <button id="brickbreaker" data-id="on" >Go</button>
-            </div>
+          <ol class="ui inverted relaxed divided list">
+            <li>Alex: 1555qw234</li>
+            <li>Alex: 15adsd55234</li>
+            <li>Alex: 15qweqw55234</li>
+            <li>Alex: 15wqeqwe55234</li>
+            <li>Alex: 1555234wqe</li>
           </ol>
+            <div class=game>
+              <button id="go" class="game-start-button ui inverted yellow button">Helicopter</button>
+              <button id="brickbreaker-button" data-id="on" class="ui inverted yellow button game-start-button">Brick Breaker</button>
+            </div>
         </div>
 
       </section>
@@ -54,17 +67,17 @@
 
     </main>
 
-    <script defer src="./src/fetch.js"></script>
-    <script defer src="./src/game.js"></script>
-    <script defer src="./src/user.js"></script>
-    <script defer src="./src/helpers.js"></script>
-    <script defer src="./src/index.js"></script>
+    <script src="./src/fetch.js"></script>
+    <script src="./src/game.js"></script>
+    <script src="./src/user.js"></script>
+    <script src="./src/helpers.js"></script>
+    <script src="./src/index.js"></script>
     <script src="./games/helicopter/matter.js"></script>
     <!-- <script defer src="./games/helicopter/sketch.js"></script> -->
     <!-- <script defer src="./games/pong.js"></script> -->
     <!-- <script src="./games/helicopter/circle.js"></script> -->
     <!-- <script src="./games/helicopter/rect.js"></script> -->
-    <script src="./games/helicopter/score.js"></script>
+    <!-- <script src="./games/helicopter/score.js"></script> -->
     <script src="./src/p5.js"></script>
     <script src="./games/helicopter/sketchtest2.js"></script>
     <script src="games/brickbreaker/src/index.js"></script>

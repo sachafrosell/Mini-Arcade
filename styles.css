@@ -19,7 +19,7 @@ body {
 .display-div {
   height: 800px;
   background: rgb(256, 256, 256);
-  opacity: 0.3;
+  opacity: 0.9;
   padding: 10px;
   border-radius: 0.5%;
 }
@@ -44,11 +44,28 @@ body {
   top:      100%; */
 }
 
-/* #leaderBoard {
+#gameArea1 {
+  padding-left: 75px;
+  padding-top: 35px;
 
-} */
+}
 
-/* #gameCanvas {
-  width: 500px;
-  height: 500px;
-} */
+#gameArea2 {
+
+}
+
+#gameArea3 {
+
+}
+
+#gameArea4 {
+
+}
+
+.game-start-button {
+  padding-top: 20px;
+}
+
+.score-display {
+  padding-left: 20px;
+}
