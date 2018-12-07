@@ -9,15 +9,11 @@ var brickbreaker = function(p) {
 
 
   p.setup = function() {
-
+    p.bricks.splice(0, p.bricks.length)
     p.scoreBoard1 = new ScoreBoard1
     p.player = new Player;
     p.createCanvas(400, 400)
-    // let cnv = p.createCanvas(400, 400)
-    // cnv.parent(gameArea1)
-
     makeBricks()
-    // p.noLoop();
   }
   //
   function makeBricks() {
@@ -77,22 +73,25 @@ var brickbreaker = function(p) {
   //
   p.keyPressed = function() {
     if (p.key === "d" || p.key === "D") {
+      // console.log("pressing");
+      // p.player.pos.x += 6
       p.player.isMovingRight = true;
     }
     else if (p.key === 'A' || p.key === "a") {
       p.player.isMovingLeft = true
+      // p.player.pos.x -= 6
     }
 
   }
   //
-  p.mousePressed = function() {
-      if (!p.isPlaying) {
-        p.bricks.splice(0, p.bricks.length)
-        p.setup()
-        p.isPlaying = true
-        p.loop()
-      }
-    }
+  // p.mousePressed = function() {
+  //     if (!p.isPlaying) {
+  //       p.bricks.splice(0, p.bricks.length)
+  //       p.setup()
+  //       p.isPlaying = true
+  //       p.loop()
+  //     }
+  //   }
   // p.mousePressed = function() {
   //   if (event.target == button2) {
   //     // console.log("hi");
@@ -116,7 +115,7 @@ var brickbreaker = function(p) {
   class ScoreBoard1 {
     constructor() {
       this.x = 1
-      this.y = p.height - 16
+      this.y = p.height - 95
       this.w = 65
       this.h = 15
       this.score = 0
@@ -127,7 +126,8 @@ var brickbreaker = function(p) {
       p.push()
       p.rect(this.x, this.y, this.w, this.h)
       p.textSize(12)
-      p.text(`Score: ${this.score}`, this.x+ 5, p.height - 3)
+      p.fill(0)
+      p.text(`Score: ${this.score}`, this.x+ 5, p.height - 382)
       p.pop()
     }
   } // end of scoreboard class
@@ -136,7 +136,7 @@ var brickbreaker = function(p) {
     constructor() {
       this.w = 70
       this.h = 12
-      this.pos = p.createVector(p.width/2 - 45, p.height-20)
+      this.pos = p.createVector(p.width/2 + 250, p.height + 250)
       this.isMovingLeft = false;
       this.isMovingRight = false;
     }
@@ -274,5 +274,5 @@ var brickbreaker = function(p) {
 
 
 }
-// 
+//
 // var brickbreakerP5 = new p5(brickbreaker, 'gameArea1');
