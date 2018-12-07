@@ -27,8 +27,9 @@ var runningMan = function(p) {
     p.imageMode(p.CENTER);
     p.angleMode(p.DEGREES);
     p.rectMode(p.CENTER);
-    let cnv = p.createCanvas(p.canvasWidth, 400);
-    cnv.parent(gameArea1);
+    p.createCanvas(p.canvasWidth, 400);
+    // let cnv = p.createCanvas(p.canvasWidth, 400);
+    // cnv.parent(gameArea1);
     p.engine = p.Engine.create();
     p.world = p.engine.world;
     p.Engine.run(p.engine);
@@ -220,5 +221,4 @@ var runningMan = function(p) {
 
 
 }
-
-var runningManP5 = new p5(runningMan)
+// document.addEventListener()

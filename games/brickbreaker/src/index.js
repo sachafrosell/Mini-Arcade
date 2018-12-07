@@ -12,7 +12,7 @@ var brickbreaker = function(p) {
 
     p.scoreBoard1 = new ScoreBoard1
     p.player = new Player;
-    // p.createCanvas(400, 400)
+    p.createCanvas(400, 400)
     // let cnv = p.createCanvas(400, 400)
     // cnv.parent(gameArea1)
 
@@ -85,33 +85,33 @@ var brickbreaker = function(p) {
 
   }
   //
-  // p.mousePressed = function() {
-  //     if (!p.isPlaying) {
-  //       p.bricks.splice(0, p.bricks.length)
-  //       p.setup()
-  //       p.isPlaying = true
-  //       p.loop()
-  //     }
-  //   }
   p.mousePressed = function() {
-    if (event.target == button2) {
-      // console.log("hi");
-      let cnv = p.createCanvas(400, 400);
-      cnv.parent(gameArea1);
-      p.bricks.splice(0, p.bricks.length)
-
-      p.setup()
-      p.isPlaying = true
-      p.loop()
-      // p.textSize(75)
-      // p.fill(0)
-      // p.text(`Ready?`, 200, 200)
-      // setTimeout(function() {
-      //   p.setup();
-      //   p.loop();
-      // }, 1000)
+      if (!p.isPlaying) {
+        p.bricks.splice(0, p.bricks.length)
+        p.setup()
+        p.isPlaying = true
+        p.loop()
+      }
     }
-  }
+  // p.mousePressed = function() {
+  //   if (event.target == button2) {
+  //     // console.log("hi");
+  //     let cnv = p.createCanvas(400, 400);
+  //     cnv.parent(gameArea1);
+  //     p.bricks.splice(0, p.bricks.length)
+  //
+  //     p.setup()
+  //     p.isPlaying = true
+  //     p.loop()
+  //     // p.textSize(75)
+  //     // p.fill(0)
+  //     // p.text(`Ready?`, 200, 200)
+  //     // setTimeout(function() {
+  //     //   p.setup();
+  //     //   p.loop();
+  //     // }, 1000)
+  //   }
+  // }
 
   class ScoreBoard1 {
     constructor() {
@@ -274,5 +274,5 @@ var brickbreaker = function(p) {
 
 
 }
-
-var myp6 = new p5(brickbreaker);
+// 
+// var brickbreakerP5 = new p5(brickbreaker, 'gameArea1');
