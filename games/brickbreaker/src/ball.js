@@ -65,7 +65,7 @@ class Ball {
     if (this.pos.y > height + this.r) {
       background(123, 123, 123)
       textSize(30)
-      text(`        SCORE: ${scoreBoard.score} \n Click to Play Again`, 60, 180)
+      text(`        SCORE: ${scoreBoard1.score} \n Click to Play Again`, 60, 180)
       isPlaying = false;
     }
   }

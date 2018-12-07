@@ -1,4 +1,4 @@
-class ScoreBoard {
+class ScoreBoard1 {
   constructor() {
     this.x = 1
     this.y = height - 16

@@ -8,7 +8,7 @@
   </head>
   <body class="landing-image">
     <header>
-      <h1>PONG</h1>
+      <h1>Arcade</h1>
     </header>
 
     <div class="leaderboard">
@@ -28,23 +28,25 @@
         </div>
         <div class="leaderboard">
           <p>Global Leaderboard</p>
-          <ol>
-            <li>Hi</li>
+          <ol id="global-list">
+            <li>HI</li>
             <div class=game>
               <button id="go">Go</button>
+              <button id="brickbreaker" data-id="on" >Go</button>
             </div>
           </ol>
         </div>
 
       </section>
+      <div class="center-div"></div>
 
         <div class="ui grid display-div" id="game-container">
-          <div id="gameArea">
+          <div id="gameArea1">
             <!-- <canvas id="gameCanvas" width="620" height="400"></canvas> -->
           </div>
           <div class="ui divider"></div>
-          <div id="gameArea">
-            <canvas width="620" height="400"></canvas>
+          <div id="gameArea2">
+            <!-- <canvas width="620" height="400"></canvas> -->
           </div>
         </div>
 
@@ -60,34 +62,36 @@
     <script src="./games/helicopter/matter.js"></script>
     <!-- <script defer src="./games/helicopter/sketch.js"></script> -->
     <!-- <script defer src="./games/pong.js"></script> -->
-    <script defer src="./games/helicopter/circle.js"></script>
-    <script defer src="./games/helicopter/rect.js"></script>
-    <script defer src="./games/helicopter/score.js"></script>
-    <!-- <script defer src="./games/helicopter/sketch.js"></script> -->
+    <!-- <script src="./games/helicopter/circle.js"></script> -->
+    <!-- <script src="./games/helicopter/rect.js"></script> -->
+    <script src="./games/helicopter/score.js"></script>
     <script src="./src/p5.js"></script>
+    <script src="./games/helicopter/sketchtest2.js"></script>
+    <script src="games/brickbreaker/src/index.js"></script>
     <script src="./games/helicopter/addons/p5.dom.js"></script>
     <script src="./src/p5.collide2d.js"></script>
     <script src="./src/domcontroller.js"></script>
-    <!-- more games
-    BrickBreaker:
-    <script src="games/brickbeaker/src/p5.js"></script>
-    <script src="games/brickbeaker/src/p5.dom.js"></script>
-    <script src="games/brickbeaker/src/player.js"></script>
-    <script src="games/brickbeaker/src/brick.js"></script>
-    <script src="games/brickbeaker/src/ball.js"></script>
-    <script src="games/brickbeaker/src/index.js"></script>
-    <script src="games/brickbeaker/src/row.js"></script>
-    <script src="games/brickbeaker/src/scoreboard.js"></script>
-    FallDown:
-    <script src="games/falldown/src/p5.js"></script>
+
+
+     <!-- more games -->
+    <!-- BrickBreaker: -->
+    <!-- <script src="/Users/alexanderfrosell/Documents/Development/Labs/mod-3/week-3/arcade-javascript-frontend/games/brickbreaker/src/p5.js"></script> -->
+    <!-- <script src="./games/brickbeaker/src/p5.dom.js"></script> -->
+    <!-- <script src="games/brickbreaker/src/player.js"></script> -->
+    <!-- <script src="games/brickbreaker/src/brick.js"></script> -->
+    <!-- <script src="games/brickbreaker/src/ball.js"></script> -->
+    <!-- <script src="games/brickbreaker/src/row.js"></script> -->
+    <!-- <script src="games/brickbreaker/src/scoreboard.js"></script> -->
+    <!-- FallDown: -->
+    <!-- <script src="games/falldown/src/p5.js"></script>
     <script src="games/falldown/src/p5.collide2d.js"></script>
     <script src="games/falldown/src/player.js"></script>
     <script src="games/falldown/src/shape.js"></script>
     <script src="games/falldown/src/stream.js"></script>
     <script src="games/falldown/src/index.js"></script>
     <script src="games/falldown/src/scoreboard.js"></script>
-    <script src="games/falldown/src/p5.dom.js"></script>
-    -->
+    <script src="games/falldown/src/p5.dom.js"></script> -->
+
 
   </body>
 </html>

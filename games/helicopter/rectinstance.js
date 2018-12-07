@@ -6,23 +6,23 @@ function Rectangle(x, y, w, h) {
   this.h = h;
 
   this.show = function() {
-    push()
-    noStroke()
-    fill(255)
-    rect(this.x, this.y, this.w, this.h)
-    pop()
+    p.push()
+    p.noStroke()
+    p.fill(255)
+    p.rect(this.x, this.y, this.w, this.h)
+    p.pop()
   }
 
   this.addToWorld = function() {
-    noLoop();
-    World.add(world, this.body)
+    p.noLoop();
+    p.World.add(p.world, this.body)
   }
   this.removeFromWorld = function() {
-    World.remove(world, this.body)
+    p.World.remove(p.world, this.body)
   }
 
   this.onScreen = function() {
-    if (this.x > 0 && this.y < width) {
+    if (this.x > 0 && this.y < p.width) {
       return true;
     } else {
       return false;
